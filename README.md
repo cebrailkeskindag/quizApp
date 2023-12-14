@@ -1,4 +1,4 @@
-# tasarim_calismasi
+# quizApp
 
 A new Flutter project.
 

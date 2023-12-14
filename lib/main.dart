@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:tasarim_calismasi/start_screen.dart';
-
-
+import 'package:quizApp/screen/start_screen.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      home: StartScreen(),
+    MaterialApp(
+      theme: ThemeData.light(useMaterial3: true),
+      home: const StartScreen(),
       debugShowCheckedModeBanner: false,
     ),
   );

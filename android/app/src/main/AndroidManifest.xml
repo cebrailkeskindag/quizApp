@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="tasarim_calismasi"
+        android:label="quizApp"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

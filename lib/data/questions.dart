@@ -1,4 +1,4 @@
-import 'package:tasarim_calismasi/models/quiz_question.dart';
+import 'package:quizApp/models/quiz_question.dart';
 
  var questions = [
   

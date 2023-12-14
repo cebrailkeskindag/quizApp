@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tasarim_calismasi/color_page/colors.dart';
-import 'package:tasarim_calismasi/data/questions.dart';
-import 'package:tasarim_calismasi/result_screen.dart';
+import 'package:quizApp/color_page/colors.dart';
+import 'package:quizApp/data/questions.dart';
+import 'package:quizApp/screen/result_screen.dart';
 
 class QuestionScreen extends StatefulWidget {
   const QuestionScreen({Key? key}) : super(key: key);
@@ -32,24 +32,22 @@ class _QuestionState extends State<QuestionScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
-              width: double.infinity,
-              child: Text(
-                questions[questionNumber].question,
-                style: const TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w300,
-                  fontSize: 20,
+            Card(
+              color: Colors.blueGrey,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  questions[questionNumber].question,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w300,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, bottom: 20),
-              child: Divider(
-                color: Colors.black,
-                height: 8.0,
-                thickness: 1.0,
-              ),
+            SizedBox(
+              height: 30,
             ),
             ...questions[questionNumber].answers.map((answer) {
               return ElevatedButton(
@@ -63,16 +61,19 @@ class _QuestionState extends State<QuestionScreen> {
                     );
                   }
                 },
-                child: Container(
-                  width: double.infinity,
-                  margin: EdgeInsets.only(bottom: 18.0),
-                  child: Center(
-                    child: Text(
-                      answer,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 16,
+                child: SizedBox(
+                  height: 100,
+                  child: Card(
+                    color: Colors.blueGrey,
+                    margin: EdgeInsets.all(12.0),
+                    child: Center(
+                      child: Text(
+                        answer,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ),

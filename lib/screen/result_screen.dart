@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tasarim_calismasi/color_page/colors.dart';
-import 'package:tasarim_calismasi/question_screen.dart';
-import 'package:tasarim_calismasi/start_screen.dart';
+import 'package:quizApp/color_page/colors.dart';
+import 'package:quizApp/screen/question_screen.dart';
+import 'package:quizApp/screen/start_screen.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({Key? key}) : super(key: key);
